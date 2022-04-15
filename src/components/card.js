@@ -44,9 +44,12 @@ const Card = (article) => {
   authorSpan.textContent = `By: ${article.authorName}`;
   authorDiv.appendChild(authorSpan);
 
+  mainCard.addEventListener("click", () => {
+    console.log(cardHeading.textContent)
+  })
+
   return mainCard
 }
-
 
 
 const cardAppender = (selector) => {
